@@ -1,6 +1,6 @@
 #Script to plot data and model
 
-growth_data <- read.csv("???")
+#growth_data <- read.csv("experiment.csv")
 
 logistic_fun <- function(t) {
   
@@ -9,14 +9,14 @@ logistic_fun <- function(t) {
   return(N)
   
 }
-
-N0 <- ??? #
+#This increases flexibility/mutability
+N0 <- exp(coef(model1)[1]) #
   
-r <- ??? #
+r <- coef(model1)[2] #
   
-K <- ??? #
+K <- coef(model2)[1] #
 
-ggplot(aes(???,???), data = growth_data) +
+ggplot(aes(t,N), data = growth_data) +
   
   geom_function(fun=logistic_fun, colour="red") +
   
