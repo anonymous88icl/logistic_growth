@@ -210,9 +210,11 @@ consider the linear and constant portions seperately.
 IN this case, the logistic function is very similar to an exponential
 function. After the transformation, the function we are fitting is
 approximately $\log(N_0\cdot{e^{rt}}) = \log({N_0}) + r\cdot{t}$. The
-coefficients given by `summary(model1)` are: $$
+coefficients given by `summary(model1)` are: 
+$$
 \log({N_0}) = 6.898
-$$ $$
+$$ 
+$$
 r = 0.01
 $$ And hence
 
