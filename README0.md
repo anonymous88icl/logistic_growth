@@ -211,9 +211,11 @@ IN this case, the logistic function is very similar to an exponential
 function. After the transformation, the function we are fitting is
 approximately $\log(N_0\cdot{e^{rt}}) = \log({N_0}) + r\cdot{t}$. The
 coefficients given by `summary(model1)` are: 
+
 $$
 \log({N_0}) = 6.898
 $$ 
+
 $$
 r = 0.01
 $$ 
@@ -228,6 +230,7 @@ $$
 
 In this case, the function becomes near constant. Here,
 `summary(model2)` gives us a good approximation to the value:
+
 $$
 K = 6.00\cdot10^{10}
 $$
@@ -237,22 +240,30 @@ $$
 # Question 2
 
 The exponential function given by fitting when $t < 1550$ is
+
 $$
 F(t) = N_0\cdot{e^{rt}}
 $$ 
+
 Hence, the population at $t = 4980$ given by the exponential function
 is: 
+
 $$
 F(4980) = 990\cdot{e^{0.01\cdot{4980}}} = 4.20\cdot10^{24}
 $$ 
+
 The logistic funtion, is given by 
+
 $$
 N(t) = \frac{KN_0e^{rt}}{K-N_0+N_0e^{rt}}
 $$ 
+
 Hence, 
+
 $$
 N(4980) = \frac{6.00\cdot{10^{10}}\cdot{990}\cdot{e^{0.01\cdot{4980}}}}{6.00\cdot{10^{10}}-990+990\cdot{e^{0.01\cdot{4980}}}} = 6.00\cdot{10^{10}}
 $$ 
+
 Which is expected as $t = 4980$ is on the “constant” portion of the
 graph and so will be extremely close to $K$.
 
@@ -261,6 +272,7 @@ The difference between the two approximations is:
 $$
 \frac{F(4980)}{N(4980)} = 7.00\cdot{10^{13}}
 $$ 
+
 As we can see, the exponential model becomes many orders larger than
 the logistic model when t is large.
 
