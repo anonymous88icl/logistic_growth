@@ -1,8 +1,8 @@
 # Logistic Growth
 
 
-The first three Questions are explored in this Markdown File developed
-using Quarto.
+The first three questions are explored in this Markdown File developed
+using Quarto (README.qmd).
 
 ------------------------------------------------------------------------
 
