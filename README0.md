@@ -236,7 +236,8 @@ $$
 
 # Question 2
 
-The exponential function given by fitting when $t < 1550$ is $$
+The exponential function given by fitting when $t < 1550$ is
+$$
 F(t) = N_0\cdot{e^{rt}}
 $$ 
 Hence, the population at $t = 4980$ given by the exponential function
