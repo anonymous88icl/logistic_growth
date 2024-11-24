@@ -227,7 +227,8 @@ $$
 ### Case 2: $t > 4000$
 
 In this case, the function becomes near constant. Here,
-`summary(model2)` gives us a good approximation to the value: $$
+`summary(model2)` gives us a good approximation to the value:
+$$
 K = 6.00\cdot10^{10}
 $$
 
