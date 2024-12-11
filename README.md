@@ -50,9 +50,8 @@ ggplot(aes(t,N), data = growth_data) +
 
 ![](README0_files/figure-commonmark/unnamed-chunk-1-2.png)
 
-Since both plots are very sensitive to scale (it is very hard to see
-deviations in the points on the extremes), we include interactive
-versions of both plots at \[\].
+Note that both plots are very sensitive to scale (it is very hard to see
+deviations in the points on the extremes). An interactive plot would help here, but Github doesn't support them.
 
 ## Fitting Linear Models
 
@@ -280,8 +279,7 @@ the logistic model when t is large.
 
 # Question 3
 
-As with before, most of the plots are quite scale-sensitive, so we will
-include an interactive version of each plot too. Once again, we assume
+As with before, most of the plots are quite scale-sensitive. Once again, we assume
 this script will be run after the previous scripts have, so all
 variables will be defined already. We will have one direct comparison of
 the exact functions and one which is semi-log transformed. For the first
@@ -302,7 +300,7 @@ exponential_fun <- function(t) {
   
 }
 
-#For Scale reasons, we only show the plot between N0 < Population_Size < 3*K Refer to the interactive version for the full plot.
+#For Scale reasons, we only show the plot between N0 < Population_Size < 3*K 
 ggplot() +
   
   geom_function(aes(color = "Logistic Growth"), fun=logistic_fun) +
@@ -362,6 +360,5 @@ ggplot() +
 
 ![](README0_files/figure-commonmark/unnamed-chunk-5-2.png)
 
-Interactive plots can be found here: \[\]
 
 ------------------------------------------------------------------------
