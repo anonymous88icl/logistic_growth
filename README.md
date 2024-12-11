@@ -1,12 +1,15 @@
 # Logistic Growth
 
 
+
 The first three questions are explored in this Markdown File developed
 using Quarto (README.qmd).
+
 
 ------------------------------------------------------------------------
 
 # Question 1
+
 
 ## Plotting Data
 
@@ -22,6 +25,8 @@ install.packages("ggplot2")
 library(ggplot2)
 
 #Standard Time vs Population Plot
+
+
 ggplot(aes(t,N), data = growth_data) +
   
   geom_point() +
@@ -36,7 +41,9 @@ ggplot(aes(t,N), data = growth_data) +
 ![](README0_files/figure-commonmark/unnamed-chunk-1-1.png)
 
 ``` r
+
 #Semi-log plot
+
 ggplot(aes(t,N), data = growth_data) +
   
   geom_point() +
@@ -49,6 +56,7 @@ ggplot(aes(t,N), data = growth_data) +
 ```
 
 ![](README0_files/figure-commonmark/unnamed-chunk-1-2.png)
+
 
 Note that both plots are very sensitive to scale (it is very hard to see
 deviations in the points on the extremes). An interactive plot would help here, but Github doesn't support them.
@@ -238,6 +246,7 @@ $$
 
 # Question 2
 
+
 The exponential function given by fitting when $t < 1550$ is
 
 $$
@@ -278,6 +287,7 @@ the logistic model when t is large.
 ------------------------------------------------------------------------
 
 # Question 3
+
 
 As with before, most of the plots are quite scale-sensitive. Once again, we assume
 this script will be run after the previous scripts have, so all
@@ -359,6 +369,7 @@ ggplot() +
 ```
 
 ![](README0_files/figure-commonmark/unnamed-chunk-5-2.png)
+
 
 
 ------------------------------------------------------------------------
