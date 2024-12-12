@@ -371,5 +371,16 @@ ggplot() +
 ![](README0_files/figure-commonmark/unnamed-chunk-5-2.png)
 
 
+# Version Control
+
+The following code helped me record all the versions and so that researchers who want to reproduce the project know the version of programs used:
+
+```r
+sink(file = "package-versions.txt")
+sessionInfo()
+sink()
+```
+
+
 
 ------------------------------------------------------------------------
